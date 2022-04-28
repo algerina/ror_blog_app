@@ -58,9 +58,8 @@ group :development, :test do
 
   gem 'rails-controller-testing'
 
-
-# Ffi
-gem 'ffi'
+  # Ffi
+  gem 'ffi'
 end
 
 group :development do
