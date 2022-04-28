@@ -1,24 +1,47 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
+# Ror blog app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a blog website built using Ruby on Rails.
 
-Things you may want to cover:
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on Rails
+## To get a local copy up and running follow these simple example steps.
 
-* Configuration
+Open your termnial and run the following command:
 
-* Database creation
+<code>git clone https://github.com/Algerina/rails-blog-app/</code>
+ - cd blog-app
+ - bundle
+ - rails db:create
+ - rails db: migrate
+ - <code>rails s</code> <br>
 
-* Database initialization
+ Open your browser and type the following URL <code>http://127.0.0.1:3000/</code>
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### Prerequisites
 
-* Deployment instructions
+- Ruby
+- Terminal
 
-* ...
+### Author
+
+
+👤 **Amel Khiri**
+
+- GitHub: [@Algerina](https://github.com/Algerina)
+- LinkedIn: [Amel Khiri](https://linkedin.com/in/amel-khiri-qahwadji-37a550135)
+- Twitter: [@Amel khiri](https://twitter.com/AmalQahwadji)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](Algerina/ror-blog-app/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
