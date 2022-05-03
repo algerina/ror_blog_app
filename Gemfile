@@ -13,6 +13,8 @@ gem 'sprockets-rails'
 # gem 'sqlite3', '~> 1.4'
 gem 'pg'
 
+gem 'bootstrap', '~> 5.1.3'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
@@ -61,6 +63,11 @@ group :development, :test do
   # Ffi
   gem 'ffi'
 end
+
+group :assets do
+  gem 'sass-rails', '~> 6.0'
+end
+
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
