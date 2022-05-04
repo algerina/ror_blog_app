@@ -5,4 +5,7 @@
 <% @post.comments.each do |comment| %>
     <p><%= "#{comment.author.name}: #{comment.text}" %></p>
   <% end %>
+
+  <button><%= link_to ("New post"), new_user_post_path(@user_id, @post_id)%></button>
+  
 </div>
