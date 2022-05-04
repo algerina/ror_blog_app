@@ -1,1 +1,16 @@
 <h1>New post</h1>
+
+<%= form_with model: @post, url: user_posts_path do |f| %>
+
+    <div>
+
+      <%= f.label :title, "Title" %>
+      <%= f.text_field :title, class:"form-control" %>
+</div>
+     <div>
+      <%= f.label :text, "Text" %>
+      <%= f.text_area :text %>
+    </div>
+    <%= f.submit "Publish"%>
+  </div>
+<% end %>
