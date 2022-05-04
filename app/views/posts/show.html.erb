@@ -1,3 +1,8 @@
-<h1>Show a post</h1>
-
-<p>User ID: <%= @user_id %></p> 
+<h1>Words</h1>
+<div>
+<h1 ><%= @post.title %>  by:<%=@post.author.name%></h1>
+<p ><%= @post.text %>  by:<%=@post.author.name%></p>
+<% @post.comments.each do |comment| %>
+    <p><%= "#{comment.author.name}: #{comment.text}" %></p>
+  <% end %>
+</div>

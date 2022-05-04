@@ -10,5 +10,6 @@ first_user = User.create(name: 'Tom', photo: 'https://images.unsplash.com/photo-
 second_user = User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.')
 
 first_post = Post.create(author: first_user, title: 'Hello', text: 'This is my first post')
+second_post = Post.create(author: first_user, title: 'Hi', text: 'This is my second post')
 
 Comment.create(post: first_post, author: second_user, text: 'Hi Tom!' )
