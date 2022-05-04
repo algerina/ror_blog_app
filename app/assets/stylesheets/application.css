@@ -14,4 +14,27 @@
  *= require_self
  */
 
+body {
+    background-color: black;
+    color: white;
+     margin: 1rem;
+     padding: 1rem;
+}
 
+li {
+    list-style: none;
+}
+
+   .card{
+       background-color: rgba(45, 42, 42, 0.48);
+       width: 65rem;
+   }
+
+   .home {
+       margin-top: 6rem;
+       margin-left: 18rem;
+   }
+
+   a {
+       font-size: x-large;
+   }
