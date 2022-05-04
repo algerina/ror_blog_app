@@ -1,2 +1,21 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>Shadows</h1>
+<section>
+<div>
+<h1>
+<div>
+    <div><%= image_tag (@user.photo), height: 200 ,width: 200 %></div>
+    <div><%= link_to (@user.name),user_path(@user.id) %></div>
+            <button class="btn btn-warning">Number of posts: <%= @user.posts_counter%></button>
+            </div>
+</h1>
+<p><%= @user.bio%></p>
+<%@user.most_recent_posts.each do |post|%>
+    <div>
+    <p><%=post.title%></p>
+    <p><%=post.text%></p>
+     <p><%= "Comments: #{post.comments_counter || 0}, Likes: #{post.likes_counter || 0 }" %></p>
+    </div>
+    <%end%>
+    <button class="btn btn-warning" ><%= link_to ("See all posts"),user_posts_path(@user.id) %></button>
+</div>
+</section>
