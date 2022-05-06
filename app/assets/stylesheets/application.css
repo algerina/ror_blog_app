@@ -21,6 +21,11 @@ body {
   padding: 1rem;
 }
 
+.title {
+  color: #ff0000e8 !important;
+  margin-inline: 10rem;
+}
+
 li {
   list-style: none;
 }
@@ -37,4 +42,5 @@ li {
 
 a {
   font-size: x-large;
+  color: #ff0000e8 !important;
 }

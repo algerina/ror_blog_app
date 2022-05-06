@@ -1,0 +1,12 @@
+<h1>Comments#new</h1>
+<%= form_with model: @comment, url: user_post_comments_path do |f| %>
+
+    <div>
+</div>
+     <div>
+      <%= f.label :text, "Text" %>
+      <%= f.text_area :text, required: true %>
+    </div>
+    <%= f.submit "Publish"%>
+  </div>
+<% end %>
