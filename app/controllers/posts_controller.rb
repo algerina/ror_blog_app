@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @current_user = User.find(params[:user_id])
+    @current_user = current_user
     post = Post.new(post_params.merge(author_id: @current_user.id, comments_counter: 0, likes_counter: 0))
     if post.valid?
       post.save
