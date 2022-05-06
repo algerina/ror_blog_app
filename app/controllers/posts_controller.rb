@@ -24,8 +24,9 @@ class PostsController < ApplicationController
     else
       # redirect_to new_user_post_path(@current_user.id)
       flash.alert = "Couldn't add the post."
+      redirect_to user_path(@current_user.id)
+
     end
-    redirect_to user_path(@current_user.id)
   end
 
   def post_params

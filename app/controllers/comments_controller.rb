@@ -10,8 +10,11 @@ class CommentsController < ApplicationController
 
     if @comment.valid?
       @comment.save
-      redirect_to user_post_path(id: @post.id, user_id: @user.id)
+      # redirect_to user_post_path(id: @post.id, user_id: @user.id)
+      flash.notice = 'Comment added successfuly.'
+      redirect_to user_post_path(@user.id, @post.id)
     else
+      flash.alert = 'Please try again.'
       redirect_to new_user_post_comment_path(@user.id, @post.id)
     end
   end
