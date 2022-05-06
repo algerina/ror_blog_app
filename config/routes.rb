@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'comments/new'
-  get 'comments/create'
+  # get 'comments/new'
+  # get 'comments/create'
+  # put '/post/:id/like' to: 'posts#like',  as: 'like'
   resources :users, only: [:index, :show] do
   resources :posts, only: [:index, :show, :create, :new] do
     resources :comments, only: [:create, :new]

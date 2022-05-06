@@ -1,22 +1,20 @@
 class LikesController < ApplicationController
 
     def create
-        @current_user = User.find(params[:user_id])
-        @user_id = params[:user_id]
-        @post_id = params[:post_id]
-        if liked?
-          redirect_to user_post_path(@user_id, @post_id)
-          return
+        # @current_user = User.find(params[:user_id])
+        # @user_id = params[:user_id]
+        # @post_id = params[:post_id]
+        @post = Post.find(params[:post_id])
+        @user = User.find(params[:user_id])
+    
+        @like = @post.likes.new(author: @user)
+    
+        if @like.save
+          flash[:notice] = 'Like!'
+          redirect_to user_post_path(@post.author, @post)
         else
-          Like.create(author_id: @current_user.id, post_id: @post_id)
+          flash[:notice] = 'Not liked.'
         end
-        redirect_to user_post_path(@user_id, @post_id)
-      end
-
-      private
-
-      def liked?
-        Like.find_by(author_id: @current_user.id, post_id: @post_id).present?
       end
 
 end
