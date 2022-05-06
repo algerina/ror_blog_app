@@ -22,8 +22,10 @@ class PostsController < ApplicationController
       flash[:notice] = 'Post was successfully created'
       redirect_to user_path(@current_user.id)
     else
-      redirect_to new_user_post_path(@current_user.id)
+      # redirect_to new_user_post_path(@current_user.id)
+      flash.alert = "Couldn't add the post."
     end
+    redirect_to user_path(@current_user.id)
   end
 
   def post_params
