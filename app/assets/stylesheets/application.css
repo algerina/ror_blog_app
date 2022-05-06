@@ -24,7 +24,6 @@ body {
 .title {
   color: #ff0000e8 !important;
   margin-inline: 10rem;
-
 }
 
 li {
@@ -44,8 +43,4 @@ li {
 a {
   font-size: x-large;
   color: #ff0000e8 !important;
-}
-
-.button {
-  
 }
