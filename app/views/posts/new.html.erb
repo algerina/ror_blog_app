@@ -2,6 +2,12 @@
 
 <%= form_with model: @post, url: user_posts_path do |f| %>
 
+  <% flash.each do |type, msg| %>
+    <div class="comment">
+      <%= msg %>
+    </div>
+  <% end %>
+
     <div>
 
       <%= f.label :title, "Title" %>

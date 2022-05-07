@@ -2,6 +2,13 @@
 <div>
 <h1 ><%= @post.title %>  by:<%=@post.author.name%></h1>
 <p ><%= @post.text %>  by:<%=@post.author.name%></p>
+
+<% flash.each do |type, msg| %>
+  <div class="comment">
+    <%= msg %>
+  </div>
+<% end %>
+
 <% @post.comments.each do |comment| %>
     <p><%= "#{comment.author.name}: #{comment.text}" %></p>
   <% end %>
