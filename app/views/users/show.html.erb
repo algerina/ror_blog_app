@@ -1,9 +1,10 @@
+<button class="btn btn-warning home" ><%= link_to ("sign_in"), new_user_session_path %></button>
 <h1>Shadows</h1>
 <section>
 <div>
 <h1>
 <div>
-    <div><%= image_tag (@user.photo), height: 200 ,width: 200 %></div>
+    <div><%= image_tag (@user.photo) unless @user.photo.nil? %></div>
     <div><%= link_to (@user.name),user_path(@user.id) %></div>
             <button class="btn btn-warning">Number of posts: <%= @user.posts_counter%></button>
             </div>
