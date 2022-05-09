@@ -13,6 +13,8 @@ gem 'sprockets-rails'
 # gem 'sqlite3', '~> 1.4'
 gem 'pg'
 
+gem 'devise'
+
 gem 'bootstrap', '~> 5.1.3'
 
 # Use the Puma web server [https://github.com/puma/puma]
