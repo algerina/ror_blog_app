@@ -58,12 +58,6 @@ li {
   transform: scale(1.05);
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .title {
   text-align: center;
   color: yellow;
@@ -143,7 +137,6 @@ button {
   --glow-color: rgb(255, 243, 176);
   --glow-spread-color: rgba(255, 253, 123, 0.781);
   --enhanced-glow-color: rgb(254, 255, 206);
-  /* --btn-color: rgb(243, 229, 32); */
   border: .25em solid var(--glow-color);
   padding: 1em 3em;
   color: var(--glow-color);
@@ -160,7 +153,7 @@ button {
   transition: all 0.3s;
 }
 
- button::after {
+button::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -175,22 +168,22 @@ button {
   transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
- button:hover {
+button:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 
-    0 0 1em .25em var(--glow-color),
-    0 0 4em 2em var(--glow-spread-color),
-    inset 0 0 .75em .25em var(--glow-color);
+  0 0 1em .25em var(--glow-color),
+  0 0 4em 2em var(--glow-spread-color),
+  inset 0 0 .75em .25em var(--glow-color);
 }
 
- button:active {
-  box-shadow: 
-    0 0 0.6em .25em var(--glow-color),
-    0 0 2.5em 2em var(--glow-spread-color),
-    inset 0 0 .5em .25em var(--glow-color);
+button:active {
+  box-shadow:
+  0 0 0.6em .25em var(--glow-color),
+  0 0 2.5em 2em var(--glow-spread-color),
+  inset 0 0 .5em .25em var(--glow-color);
 }
 
- .comment {
+.comment {
   color: green;
 }
