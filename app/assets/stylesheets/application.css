@@ -83,6 +83,10 @@ li {
   left: 30rem;
 }
 
+.new {
+  display: flex;
+}
+
 
 .counter {
   border: none;
