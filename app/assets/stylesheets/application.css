@@ -137,6 +137,7 @@ button {
   --glow-color: rgb(255, 243, 176);
   --glow-spread-color: rgba(255, 253, 123, 0.781);
   --enhanced-glow-color: rgb(254, 255, 206);
+  /* --btn-color: rgb(243, 229, 32); */
   border: .25em solid var(--glow-color);
   padding: 1em 3em;
   color: var(--glow-color);
@@ -146,12 +147,12 @@ button {
   border-radius: 1em;
   outline: none;
   box-shadow: 0 0 1em .25em var(--glow-color),
-  0 0 4em 1em var(--glow-spread-color),
-  inset 0 0 .75em .25em var(--glow-color);
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
-}
+ }
 
 button::after {
   pointer-events: none;
@@ -166,23 +167,21 @@ button::after {
   opacity: .7;
   color: yellow;
   transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-}
+ }
 
 button:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
-  box-shadow: 
-  0 0 1em .25em var(--glow-color),
-  0 0 4em 2em var(--glow-spread-color),
-  inset 0 0 .75em .25em var(--glow-color);
-}
-
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
 button:active {
-  box-shadow:
-  0 0 0.6em .25em var(--glow-color),
-  0 0 2.5em 2em var(--glow-spread-color),
-  inset 0 0 .5em .25em var(--glow-color);
-}
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
 
 .comment {
   color: green;
