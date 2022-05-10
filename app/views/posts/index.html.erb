@@ -1,7 +1,7 @@
 <h1>Posts</h1>
 
 <div>
-    <div><%= image_tag (@user.photo), height: 200 ,width: 200 %></div>
+    <div><%= image_tag (@user.photo) unless @user.photo.nil? %></div>
             <h1><%=@user.name%></h1>
             <button class="btn btn-warning" >Number of posts: <%= @user.posts_counter%></button>
             </div>

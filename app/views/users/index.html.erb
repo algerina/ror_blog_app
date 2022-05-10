@@ -1,13 +1,16 @@
-<%= button_to ("sign_out"), destroy_user_session_path, method: :delete %>
+<nav class="navbar navbar-dark bg-dark">
+<button class="btn btn-warning home" ><%= link_to ("sign_out"), destroy_user_session_path, method: :delete %></button>
+</nav>
+
 <h1 class="title">Between light and shadow</h1>
-    <main>
+<main>
     <ul>
     <% @users.each do |user| %>
         <li>
-        <div class="card mb-3" style="max-width: 80%">
+        <div class="card text-white bg-dark mb-3" style="max-width: 80%">
         <div class="row g-0">
 
-    <div class="img-fluid rounded-start col-md-4"><%= image_tag (user.photo) unless user.photo.nil? %></div>
+    <div class="img-fluid rounded-start" alt=""><%= image_tag (user.photo) unless user.photo.nil? %></div>
     <div class="col-md-8">
     <div class="card-body">
     <div class="card-text"><%= link_to (user.name),user_path(user.id) %></div>
