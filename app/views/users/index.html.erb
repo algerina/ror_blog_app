@@ -1,20 +1,20 @@
-<nav class="navbar navbar-dark bg-dark">
-<%= button_to ("sign_out"), destroy_user_session_path, method: :delete,  class:'btn btn-warning home' %>
+<nav class="navbar navbar-dark">
+<%= button_to ("sign_out"), destroy_user_session_path, method: :delete,  class:'btn btn-warning log counter' %>
 </nav>
+<main class= "main">
 
 <h1 class="title">Between light and shadow</h1>
-<main>
     <ul>
     <% @users.each do |user| %>
-        <li>
-        <div class="card text-white bg-dark mb-3" style="max-width: 80%">
-        <div class="row g-0">
+        <li class="grow">
+        <div>
+        <div>
 
-    <div class="img-fluid rounded-start" alt=""><%= image_tag (user.photo) unless user.photo.nil? %></div>
-    <div class="col-md-8">
-    <div class="card-body">
-    <div class="card-text"><%= link_to (user.name),user_path(user.id) %></div>
-            <button class="btn btn-warning home" >Number of posts: <%= user.posts_counter%></button>
+    <div><%= image_tag (user.photo) unless user.photo.nil? %></div>
+    <div>
+    <div>
+    <div class="user"><%= link_to (user.name),user_path(user.id) %></div>
+            <button class="btn btn-warning home counter" >Number of posts: <%= user.posts_counter%></button>
             <%end%>
             </div>
             </div>
