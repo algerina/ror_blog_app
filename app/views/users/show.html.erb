@@ -1,11 +1,14 @@
+<nav class="navbar navbar-dark">
+<button class="btn btn-warning counter log" ><%= link_to ("sign_in"), new_user_session_path %></button>
+</nav>
 <h1>Shadows</h1>
 <section>
-<div>
+<div class="usersShow">
 <h1>
 <div>
-    <div><%= image_tag (@user.photo), height: 200 ,width: 200 %></div>
+    <div><%= image_tag (@user.photo) unless @user.photo.nil? %></div>
     <div><%= link_to (@user.name),user_path(@user.id) %></div>
-            <button class="btn btn-warning">Number of posts: <%= @user.posts_counter%></button>
+            <button class="btn btn-warning counter">Number of posts: <%= @user.posts_counter%></button>
             </div>
 </h1>
 <p><%= @user.bio%></p>

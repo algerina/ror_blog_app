@@ -13,7 +13,7 @@ Open your termnial and run the following command:
 
 <code>git clone https://github.com/Algerina/rails-blog-app/</code>
  - cd blog-app
- - bundle
+ - bundle install
  - rails db:create
  - rails db: migrate
  - <code>rails s</code> <br>
@@ -25,6 +25,7 @@ Open your termnial and run the following command:
 
 - Ruby
 - Terminal
+- 
 
 ### Author
 
@@ -37,6 +38,7 @@ Open your termnial and run the following command:
 
 
 ## 🤝 Contributing
+**Anibal AMoroso** 
 
 Contributions, issues, and feature requests are welcome!
 
