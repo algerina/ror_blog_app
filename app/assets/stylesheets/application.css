@@ -22,7 +22,6 @@ body {
   padding: 1rem;
 }
 
-
 h1 {
   text-shadow: 3px 3px #c6c6c6bf;
   font-family: Arial, Helvetica, sans-serif;
@@ -59,7 +58,6 @@ li {
   transform: scale(1.05);
 }
 
-
 .main {
   display: flex;
   flex-direction: column;
@@ -76,17 +74,10 @@ li {
   margin-left: 3rem;
 }
 
-
 .home {
-  /* margin-top: 6rem; */
   margin-left: rem;
   left: 30rem;
 }
-
-.new {
-  display: flex;
-}
-
 
 .counter {
   border: none;
@@ -96,7 +87,6 @@ li {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  /* margin: 130px 10px; */
   height: fit-content;
   border-radius: 1rem;
 }
@@ -113,20 +103,17 @@ nav {
   margin-bottom: 2rem;;
 }
 
-
 .logout {
   display: flex;
   justify-content: flex-end;
   margin-right: 4rem;
 }
 
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 p {
   font-size: larger;
@@ -139,7 +126,6 @@ img {
   max-height: 200px;
 }
 
-
 .card {
   background-color: rgba(45, 42, 42, 0.48);
   width: 65rem;
@@ -147,14 +133,11 @@ img {
 
 a {
   font-size: x-large;
-  /* color: #ff0000e8 !important; */
   font-size: larger;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  /* text-shadow: 3px 3px #c6c6c6bf; */
   color: yellow;
 }
-
 
 button {
   --glow-color: rgb(255, 243, 176);
@@ -176,7 +159,7 @@ button {
   position: relative;
   transition: all 0.3s;
  }
- 
+
  button::after {
   pointer-events: none;
   content: "";
@@ -191,7 +174,7 @@ button {
   color: yellow;
   transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
  }
- 
+
  button:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
@@ -199,7 +182,7 @@ button {
          0 0 4em 2em var(--glow-spread-color),
          inset 0 0 .75em .25em var(--glow-color);
  }
- 
+
  button:active {
   box-shadow: 0 0 0.6em .25em var(--glow-color),
          0 0 2.5em 2em var(--glow-spread-color),

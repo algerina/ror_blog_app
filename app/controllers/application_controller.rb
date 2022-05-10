@@ -16,7 +16,6 @@ class ApplicationController < ActionController::Base
     end
   end
 
-
   # before_action :authenticate_user!
 
   # def configure_permitted_parameters
@@ -27,5 +26,4 @@ class ApplicationController < ActionController::Base
   #   devise_parameter_sanitizer.permit(:sign_up) do |u|
   #   u.permit(:name, :bio, :email, :password, :password_confirmation)
   # end
-
 end
