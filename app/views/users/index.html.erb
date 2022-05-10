@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-dark">
-<button class="btn btn-warning home" ><%= link_to ("sign_out"), destroy_user_session_path, method: :delete %></button>
+<%= button_to ("sign_out"), destroy_user_session_path, method: :delete,  class:'btn btn-warning home' %>
 </nav>
 
 <h1 class="title">Between light and shadow</h1>
