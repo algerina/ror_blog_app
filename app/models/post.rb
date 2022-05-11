@@ -7,8 +7,12 @@ class Post < ApplicationRecord
 
   # private
 
+  # def update_posts_counter
+  #   author.increment!(:posts_counter)
+  # end
+
   def update_posts_counter
-    author.increment!(:posts_counter)
+    author.update(posts_counter: author.posts.length)
   end
 
   def most_recent_comments
