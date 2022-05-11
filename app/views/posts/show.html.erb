@@ -3,6 +3,8 @@
 <h1 ><%= @post.title %>  by:<%=@post.author.name%></h1>
 <p ><%= @post.text %>  by:<%=@post.author.name%></p>
 
+<p  ><%= "Comments: #{@post.comments_counter || 0}, Likes: #{@post.likes_counter || 0 }" %></p>
+
 <% flash.each do |type, msg| %>
   <div class="comment">
     <%= msg %>
@@ -17,11 +19,11 @@
   <button><%= link_to ("New post"), new_user_post_path(@user_id, @post_id)%></button>
   <br>
   <div class="likes">
-  <div class="button counter"><%= button_to ("New comment"), new_user_post_comment_path(@user_id, @post_id)%>
+  <div class="button counter"><%= link_to ("New comment"), new_user_post_comment_path(@user_id, @post_id)%>
   </div><br>
 
 
-  <div class="button"><%= button_to ("Like"), user_post_likes_path(@post.author, @post), method: :post %></div>
+  <div class="button"><%= link_to ("Like"), user_post_likes_path(@post.author, @post), method: :post %></div>
   </div>
   </div>
 
