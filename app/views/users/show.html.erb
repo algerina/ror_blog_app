@@ -14,7 +14,7 @@
 <p><%= @user.bio%></p>
 <%@user.most_recent_posts.each do |post|%>
     <div>
-    <p><%=post.title%></p>
+    <p><%= link_to (post.title), "/users/#{@user.id}/posts/#{post.id}"%></p>
     <p><%=post.text%></p>
      <p><%= "Comments: #{post.comments_counter || 0}, Likes: #{post.likes_counter || 0 }" %></p>
     </div>

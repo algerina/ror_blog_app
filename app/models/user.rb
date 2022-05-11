@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :likes, foreign_key: 'author_id'
 
   def most_recent_posts
-    posts.order(created_at: :desc).limit(3)
+    posts.order(created_at: :asc).limit(3)
   end
 
   # validates :name, presence: true, length: { minimum: 2 }, uniqueness: true
