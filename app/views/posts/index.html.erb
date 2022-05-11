@@ -11,6 +11,10 @@
                 <div>
                 <p><%= link_to (post.title),"/users/#{@user.id}/posts/#{post.id}"%></p>
                 <p><%=post.text%></p>
+                
+                <% if can? :destroy, post %><%= button_to "Delete", user_post_path(post.author_id, post.id), method: :delete %>
+                <%end%>
+
                  <p><%= "Comments: #{post.comments_counter || 0}, Likes: #{post.likes_counter || 0 }" %></p>
                 </div>
                 <%post.most_recent_comments.each do |comment|%>
