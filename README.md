@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Ror blog app
+# Ror blog app and Ror Api
 
-This project is a blog website built using Ruby on Rails.
+This project is a blog website built using Ruby on Rails and also provides API endpoints.
 
 
 ## Built With
