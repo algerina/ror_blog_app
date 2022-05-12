@@ -1,7 +1,4 @@
 class ApplicationController < ActionController::API
-
- 
-
   protected
 
   def update_allowed_parameters

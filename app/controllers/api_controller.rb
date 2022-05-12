@@ -1,6 +1,4 @@
 class ApiController < ApplicationController
- 
-
   def index_posts
     render json: Post.all
   end
