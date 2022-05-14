@@ -1,0 +1,22 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/users":
+    get:
+      summary: Get all users
+      parameters:
+      - name: Authorization
+        in: headers
+        schema:
+          type: string
+      responses:
+        '401':
+          description: No Web Token
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: http://localhost:3000
