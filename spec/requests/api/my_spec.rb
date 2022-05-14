@@ -1,2 +1,1 @@
 require 'swagger_helper'
-
